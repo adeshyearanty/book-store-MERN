@@ -18,7 +18,7 @@ const CreateBook = () => {
         }
 
         axios
-            .post(`http://localhost:3000/books`, data)
+            .post(`https://book-store-mern-adesh.onrender.com/books`, data)
             .then(() => {
                 navigate('/');
             })

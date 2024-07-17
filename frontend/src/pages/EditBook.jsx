@@ -14,7 +14,7 @@ const EditBook = () => {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:3000/books/${id}`)
+            .get(`https://book-store-mern-adesh.onrender.com/books/${id}`)
             .then((res) => {
                 setTitle(res.data.title);
                 setAuthor(res.data.author);
@@ -33,7 +33,7 @@ const EditBook = () => {
         }
 
         axios
-            .put(`http://localhost:3000/books/${id}`, data)
+            .put(`https://book-store-mern-adesh.onrender.com/books/${id}`, data)
             .then(() => {
                 navigate('/');
             })

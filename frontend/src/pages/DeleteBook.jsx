@@ -9,7 +9,7 @@ const DeleteBook = () => {
 
     const handleDeleteBook = () => {
         axios
-            .delete(`http://localhost:3000/books/${id}`)
+            .delete(`https://book-store-mern-adesh.onrender.com/books/${id}`)
             .then(() => {
                 navigate('/');
             })
